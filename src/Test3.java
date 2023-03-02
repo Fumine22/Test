@@ -10,7 +10,10 @@ import java.util.Scanner;
 public class Test3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your balance: ");
+        double balance = scanner.nextDouble();
         try {
+            while (true) {
             System.out.println("Choose 1 to withdraw");
             System.out.println("Choose 2 to deposit");
             System.out.println("Choose 3 to check your balance");
@@ -18,9 +21,6 @@ public class Test3 {
             System.out.println("Choose the number to continue: ");
             int number = scanner.nextInt();
             if (number > 0 && number < 4) {
-                System.out.println("Enter your balance: ");
-                double balance = scanner.nextDouble();
-                while (number > 0 && number < 4) {
 //                Rút tiền (Withdraw money)
                     if (number == 1) {
                         System.out.println("Enter amount you want to withdraw: ");
@@ -71,7 +71,9 @@ public class Test3 {
                     if (number == 4) {
                         break;
                     }
-                }
+                } else {
+                break;
+            }
             }
         } catch (NumberFormatException exception) {
             System.out.println("Can't access!" + exception);
