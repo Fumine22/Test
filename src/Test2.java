@@ -1,5 +1,4 @@
-// Use Scanner in java for user to enter a number and then reverse the number including the zero at the end
-// eventually print to console (use loop for).
+/*Use Scanner in java for user to enter a number and then reverse the number including the zero at the end eventually print to console (use loop for).*/
 import java.util.Scanner;
 
 public class Test2 {
